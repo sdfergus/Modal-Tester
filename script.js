@@ -27,9 +27,7 @@ overlay.addEventListener('click', closeModal);
 //Event that occurs as soon as you press a key on the keyboard
 document.addEventListener('keydown', function (e) {
   //   console.log(e);
-  if (e.key === 'Escape') {
-    if (!modal.classList.contains('hidden')) {
-      closeModal();
-    }
+  if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+    closeModal();
   }
 });
